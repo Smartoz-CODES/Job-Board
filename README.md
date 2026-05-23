@@ -27,6 +27,8 @@ information for each role, including location, salary, and job description.
 ---
 
 ## Project Structure
+
+```
 src/
 ├── Components/
 │   ├── job-card.tsx     # Displays a single job with a toggle button
@@ -37,6 +39,7 @@ src/
 │   └── style.css        # All component and layout styles
 ├── App.tsx              # Root component — imports job data and passes it to JobList
 └── main.tsx             # Entry point — mounts the App component into the DOM
+```
 
 ## React & TypeScript Concepts Demonstrated
 
