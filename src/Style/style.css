@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #1a1a1a;
+    line-height: 1.5;
+}
+
+/* ── App layout ── */
+
+.Workapp {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 16px 20px;
+}
+
+.Workapp-header {
+    text-align: center;
+    padding: 36px 0 28px;
+}
+
+.Workapp-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 4px;
+}
+
+.Workapp-header p {
+    font-size: 16px;
+    color: #666;
+}
+
+.Workapp-list {
+    padding-bottom: 40px;
+}
+
+/* ── Job list grid ── */
+
+.job-list-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+
+@media (min-width: 640px) {
+    .job-list-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ── Empty state ── */
+
+.job-list-empty {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.job-list-empty p {
+    font-size: 20px;
+    color: #888;
+}
+
+/* ── Job card ── */
+
+.job-card {
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+.job-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    transform: translateY(-2px);
+}
+
+.job-card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.job-card-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.job-card-company {
+    font-size: 15px;
+    color: #555;
+}
+
+/* ── Togglable details ── */
+
+.job-card-details {
+    background: #f8f9fa;
+    border-left: 3px solid #1a1a1a;
+    border-radius: 0 6px 6px 0;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.job-card-detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-card-label {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #888;
+}
+
+.job-card-value {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.job-card-description {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.55;
+    padding-top: 4px;
+    border-top: 1px solid #e8e8e8;
+}
+
+/* ── Toggle button ── */
+
+.job-card-btn {
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background 0.2s ease;
+}
+
+.job-card-btn:hover {
+    background: #333;
+}
+
+.job-card-btn:active {
+    background: #000;
+}
